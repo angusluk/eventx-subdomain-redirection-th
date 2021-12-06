@@ -7,7 +7,7 @@
   <script type="text/javascript">
   let parser = document.createElement('a');
   let locale = ""
-  parser.href = document.referrer;
+  parser.href = window.location;
   if (parser.hostname == "zh-cht.eventx.io"){
     locale = "zh"
   } else if (parser.hostname == "zh-cn.eventx.io"){
