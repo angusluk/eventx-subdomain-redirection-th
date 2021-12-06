@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventX Redirection</title>
+</head>
+<body>
+  <script type="text/javascript">
+  let parser = document.createElement('a');
+  parser.href = window.location;
+  if (parser.hostname == "zh-cht.eventx.io"){
+    window.location.replace("http://www.eventx.io/zh" + parser.pathname + parser.search);
+  }
+  </script>
+</body>
+</html>
